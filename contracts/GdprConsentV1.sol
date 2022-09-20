@@ -39,4 +39,9 @@ contract GdprConsentV1 is Initializable {
             revert PermissionAlreadyGranted();
         basePermissions[_emailHash] = true;
     }
+
+    function getBasePermission(string calldata email) public view returns (bool) {
+        uint256 _emailHash = emailToHash(email);
+        return basePermissions[_emailHash];
+    }
 }
