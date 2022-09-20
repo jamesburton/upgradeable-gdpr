@@ -2,19 +2,99 @@
   "manifestVersion": "3.2",
   "admin": {
     "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
-    "txHash": "0xcbfd1e9f0b8e3f70054dac801a74dc84a33f519135f8667a37915df96fd7dc3b"
+    "txHash": "0xaae62432024842a3a4c841f4f48754146bee9d818483041f314fdda783caca76"
   },
   "proxies": [
     {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0xc31e06e3d65ecebfe53137c5f252745d22a630f6f2ab0bced8164327b215276c",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853",
+      "txHash": "0xe83eafce89ef98d425d84ceccffba55fd9cc33a481cffafefc1b8260c6c93fbe",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6",
+      "txHash": "0xae8bc787c90fbdc5c9cf19126c283317005781bf97fa02d628cfd909e924a9cd",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8A791620dd6260079BF849Dc5567aDC3F2FdC318",
+      "txHash": "0x892a3e938d9149875b755234a6f1c1958c75efb99199dc6f04a7fb0d642a69cd",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x610178dA211FEF7D417bC0e6FeD39F05609AD788",
+      "txHash": "0x0583216083a10df4063b44fb3c1d347d892ad7f4a1d0ae252e493cff829bfea1",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xB7f8BC63BbcaD18155201308C8f3540b07f84F5e",
+      "txHash": "0xea0a0c5245a652b776f435ad0d858e40cf28c4bd0a23aa91ea027c0f3c399a1a",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xA51c1fc2f0D1a1b8494Ed1FE312d7C3a78Ed91C0",
+      "txHash": "0x690fbb716ea4ee430b93271a18e3b6527f94ea11afbda4257db79c1967bc17cd",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82",
+      "txHash": "0xf00802fdf6a65337ec983b8e45f963183af31fac6096d2c2fb48640a78d5fa26",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9A676e781A523b5d0C0e43731313A708CB607508",
+      "txHash": "0xbfc67866e6f367b63f2d9459a6e1dcc6f007436f15ee16517efd2ce01f407ec2",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0B306BF915C4d645ff596e518fAf3F9669b97016",
+      "txHash": "0xfb89b05ddedcfb4119904b6f90b36ca58f23aed11f4bbd16a82b4592d1d29d2d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x959922bE3CAee4b8Cd9a407cc3ac1C251C2007B1",
+      "txHash": "0xc6e28cedff6f0f01946879ec51b7bd330be541f0b60f87f79e2067c5167af4a2",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9A9f2CCfdE556A7E9Ff0848998Aa4a0CFD8863AE",
+      "txHash": "0x1974cc73d1edd7f8dc0300e6af9ecca0bc955ba4086d136e3fb779f066250362",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x68B1D87F95878fE05B998F19b66F4baba5De1aed",
+      "txHash": "0xba5c90fa52440c6b1ce11fc116d1d51e1d9a69c800071eeb98d7b518e215208b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3Aa5ebB10DC797CAC828524e59A333d0A371443c",
+      "txHash": "0x67a1d4f9e26e18e78e1705fd88da8528cec3d5d3e4cc4326a7cbc1786e0bc25d",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xc6e7DF5E7b4f2A278906862b61205850344D4e7d",
+      "txHash": "0xb14635c4794f8b8809854daf390b0c35304031337e229d3cb972eaf6ee64fb13",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+      "txHash": "0xb0aeeec5e8783776eb345b6b5d615aa3b4352511aebb8f72f080b0a3b168926a",
+      "kind": "transparent"
+    },
+    {
       "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
-      "txHash": "0x375fc8e8a47b56653605c525e098c29cd2cbb92deda64aeda8b1104c9f47d5a7",
+      "txHash": "0xceb43360f6abb6fc53f4f172a66f870f3817af0be78d09b4bee09c321305fd9e",
       "kind": "transparent"
     }
   ],
   "impls": {
-    "202f912d61055d069b16acbaea89af3f0261f885e6f8b1a1d3afbd982818cd37": {
+    "36038a8b888370d918696eae2c5fd3bf002005f98fe1d64aa91d5d015ba06c01": {
       "address": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
-      "txHash": "0xc4f996b1df84b3a46fae5a793767d67bed5074516766ef9908a37eaf7618a161",
+      "txHash": "0xa062a2c13e4505bd46ec78ad0cf162cd593add4f73bc1feaa7e4c4f678b98f72",
       "layout": {
         "storage": [
           {
@@ -40,7 +120,7 @@
             "slot": "1",
             "type": "t_mapping(t_uint256,t_bool)",
             "contract": "GdprConsentV1",
-            "src": "contracts/GdprConsentV1.sol:10"
+            "src": "contracts/GdprConsentV1.sol:12"
           },
           {
             "label": "platformPermissions",
@@ -48,7 +128,7 @@
             "slot": "2",
             "type": "t_mapping(t_uint256,t_bool)",
             "contract": "GdprConsentV1",
-            "src": "contracts/GdprConsentV1.sol:11"
+            "src": "contracts/GdprConsentV1.sol:13"
           },
           {
             "label": "platformPurposePermissions",
@@ -56,7 +136,7 @@
             "slot": "3",
             "type": "t_mapping(t_uint256,t_bool)",
             "contract": "GdprConsentV1",
-            "src": "contracts/GdprConsentV1.sol:12"
+            "src": "contracts/GdprConsentV1.sol:14"
           }
         ],
         "types": {
@@ -66,6 +146,113 @@
           },
           "t_mapping(t_uint256,t_bool)": {
             "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "a5462db22cab812d014016b40fecf37ea7d033a8198f28777db9b9e476636a70": {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0x8647ca10226d9e1a91fa8b10516a504ed91fbd24121894b8ef64bfc48f8dcfb1",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "basePermissions",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:16"
+          },
+          {
+            "label": "platformPermissions",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:17"
+          },
+          {
+            "label": "platformPurposePermissions",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:18"
+          },
+          {
+            "label": "platformCount",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:19"
+          },
+          {
+            "label": "platforms",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_uint256,t_string_storage)",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:20"
+          },
+          {
+            "label": "purposeCount",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_uint256",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:21"
+          },
+          {
+            "label": "purposes",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_uint256,t_string_storage)",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:22"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_string_storage)": {
+            "label": "mapping(uint256 => string)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
             "numberOfBytes": "32"
           },
           "t_uint256": {
