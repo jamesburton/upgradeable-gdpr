@@ -73,6 +73,28 @@ describe("GdprConsentV2", async function() {
             const platforms = await contract.getPlatforms();
             expect(platforms).to.eql([platform1, platform2]); // NB: Use .eql not .equal to compare values within array/list
         });
+        it("Should revert for hasPermission for missing platform", async function() {
+            const { contract } = await loadFixture(deployProxyFixture);
+            await expect(contract.hasPermission(email1, platform1)).to.be.reverted;
+        });
+        it("Should not revert for hasPermission for added platform", async function() {
+            const { contract } = await loadFixture(deployProxyFixture);
+            await contract.addPlatform(platform1);
+            await expect(contract.hasPermission(email1, platform1)).not.to.be.reverted;
+        });
+        it("Should return false for hasPermission without adding by email and platform", async function() {
+            const { contract } = await loadFixture(deployProxyFixture);
+            await contract.addPlatform(platform1);
+            const permission = await contract.hasPermission(email1, platform1);
+            expect(permission).to.equal(false);
+        });
+        it("Should return true for hasPermission after adding by email and platform", async function() {
+            const { contract } = await loadFixture(deployProxyFixture);
+            await contract.addPlatform(platform1);
+            await contract.grantPlatformPermission(email1, platform1);
+            const permission = await contract.hasPermission(email1, platform1);
+            expect(permission).to.equal(true);
+        });
     });
 
     // Purpose Tests
@@ -119,6 +141,37 @@ describe("GdprConsentV2", async function() {
             await expect(contract.addPurpose(purpose2)).not.to.be.reverted;
             const purposes = await contract.getPurposes();
             expect(purposes).to.eql([purpose1, purpose2]); // NB: Use .eql not .equal to compare values within array/list
+        });
+        it("Should revert for hasPermission for missing platform with existing purpose", async function() {
+            const { contract } = await loadFixture(deployProxyFixture);
+            await contract.addPurpose(purpose1);
+            await expect(contract.hasPurpose(email1, platform1, purpose1)).to.be.reverted;
+        });
+        it("Should revert for hasPermission for missing purpose with existing platform", async function() {
+            const { contract } = await loadFixture(deployProxyFixture);
+            await contract.addPlatform(platform1);
+            await expect(contract.hasPurpose(email1, platform1, purpose1)).to.be.reverted;
+        });
+        it("Should not revert for hasPermission for added platform and purpose", async function() {
+            const { contract } = await loadFixture(deployProxyFixture);
+            await contract.addPlatform(platform1);
+            await contract.addPurpose(purpose1);
+            await expect(contract.hasPurpose(email1, platform1, purpose1)).not.to.be.reverted;
+        });
+        it("Should return false for hasPermission without adding by email, platform and purpose", async function() {
+            const { contract } = await loadFixture(deployProxyFixture);
+            await contract.addPlatform(platform1);
+            await contract.addPurpose(purpose1);
+            const permission = await contract.hasPurpose(email1, platform1, purpose1);
+            expect(permission).to.equal(false);
+        });
+        it("Should return true for hasPermission after adding by email, platform and purpose", async function() {
+            const { contract } = await loadFixture(deployProxyFixture);
+            await contract.addPlatform(platform1);
+            await contract.addPurpose(purpose1);
+            await contract.grantPlatformPurposePermission(email1, platform1, purpose1);
+            const permission = await contract.hasPurpose(email1, platform1, purpose1);
+            expect(permission).to.equal(true);
         });
     });
 });

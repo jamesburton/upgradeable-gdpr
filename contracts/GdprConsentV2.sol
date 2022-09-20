@@ -168,4 +168,20 @@ contract GdprConsentV2 is Initializable {
         }
         return _purposes;
     }
+
+    function hasPermission(string calldata email, string calldata platform)
+        public view platformExists(platform)
+        returns (bool)
+    {
+        uint _hash = emailAndPlatformHash(email, platform);
+        return platformPermissions[_hash];
+    }
+
+    function hasPurpose(string calldata email, string calldata platform, string calldata purpose)
+        public view platformExists(platform) purposeExists(purpose)
+        returns (bool)
+    {
+        uint _hash = emailPlatformAndPurposeHash(email, platform, purpose);
+        return platformPurposePermissions[_hash];
+    }
 }

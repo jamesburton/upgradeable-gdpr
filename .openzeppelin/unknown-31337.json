@@ -81,13 +81,13 @@
       "kind": "transparent"
     },
     {
-      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
-      "txHash": "0xb0aeeec5e8783776eb345b6b5d615aa3b4352511aebb8f72f080b0a3b168926a",
+      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "txHash": "0xceb43360f6abb6fc53f4f172a66f870f3817af0be78d09b4bee09c321305fd9e",
       "kind": "transparent"
     },
     {
-      "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
-      "txHash": "0xceb43360f6abb6fc53f4f172a66f870f3817af0be78d09b4bee09c321305fd9e",
+      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+      "txHash": "0xd9ac3b4645dc0714c7a8e9852a0c79f91406781087103ca752662f5f5c96e944",
       "kind": "transparent"
     }
   ],
@@ -162,6 +162,113 @@
     "a5462db22cab812d014016b40fecf37ea7d033a8198f28777db9b9e476636a70": {
       "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
       "txHash": "0x8647ca10226d9e1a91fa8b10516a504ed91fbd24121894b8ef64bfc48f8dcfb1",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "basePermissions",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:16"
+          },
+          {
+            "label": "platformPermissions",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:17"
+          },
+          {
+            "label": "platformPurposePermissions",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:18"
+          },
+          {
+            "label": "platformCount",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_uint256",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:19"
+          },
+          {
+            "label": "platforms",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_uint256,t_string_storage)",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:20"
+          },
+          {
+            "label": "purposeCount",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_uint256",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:21"
+          },
+          {
+            "label": "purposes",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_uint256,t_string_storage)",
+            "contract": "GdprConsentV2",
+            "src": "contracts/GdprConsentV2.sol:22"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_string_storage)": {
+            "label": "mapping(uint256 => string)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "e6a4c621bb8b7a8b8b79fc6ddeef07639456633b629b0abe7a925916ed09558b": {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0xb7ffb34f41d31c7ff00561f42a228247b6c4d2380c20937144286d12e4360bfa",
       "layout": {
         "storage": [
           {
